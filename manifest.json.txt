@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Profile Picture Modifier",
+  "version": "1.0",
+  "description": "This extension modifies profile pictures on the LinkedIn homepage.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/feed/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
